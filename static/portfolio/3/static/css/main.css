@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: TuesdayNight;
+    src: url('../font/TuesdayNight-Regular.otf') format('otf');
+}
+
+@font-face{
+    font-family: Cormorant;
+    src: url('../font/Cormorant-Medium.ttf');
+}
+
+@media only screen and (max-width: 768px){
+    .category>section:nth-of-type(1){
+        width: 100%;
+    }
+    
+    .category>section:nth-of-type(2){
+        width: 100%;
+    }
+}
+
+
+/* start header_top (the black section) */
+
+.header_top{
+    width: 100%;
+    height: 34px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_top>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_top>ul>li{
+    list-style-type: none;
+    color: white;
+    font-style: italic;
+}
+
+.header_top>ul>li>a{
+    padding: 0 18px;
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-user{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/* end header_top */
+
+/* start menu */
+
+.menu>h1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: TuesdayNight;
+}
+
+.menu_items{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-heart{
+    padding-right: 5px;
+}
+
+.menu_items>ul{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu_items>ul>li{
+    list-style-type: none;
+    position: relative;
+}
+
+.menu_items>ul>li::before{
+    content: '';
+    width: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: .4s;
+}
+.menu_items>ul>li:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.menu_items a{
+    text-decoration: none;
+    font-family: Cormorant;
+    text-transform: uppercase;
+}
+
+.menu_items a:visited{
+    color: black;
+}
+
+.menu_items>section:nth-of-type(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu_items>section:nth-of-type(2)>section{
+    padding: 0 9px;
+}
+
+.submenu1>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submenu1::before{
+    display: none;
+}
+
+.menu_items>ul>li:nth-of-type(2):hover .submenu1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* end menu */
+
+/* start slider */
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slider{
+    width: 90%;
+    height: 67vh;
+    min-height: 400px;
+    background-size: cover;
+    margin-top: 20px;
+    background-image: url('https://biagiotti.qodeinteractive.com/wp-content/uploads/2019/08/h-2-slider-img-3.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider>section{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.slider>section>section{
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider>section>section>a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+/* end slider */
+
+/* start category */
+
+.category{
+    width: 90%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.category1{
+    flex-basis: 48%;
+    height: 100%;
+    margin-right: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+.category1>figure{
+    flex-basis: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    
+}
+
+.category1>figure>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.category1>figure:hover img{
+    width: 110%;
+    right: -10%;
+}
+
+.category2{
+    flex-basis: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2%;
+}
+
+.category2>figure:nth-of-type(1){
+    flex-basis: 100%;
+    height: 47%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.category2>figure:nth-of-type(2){
+    flex-basis: 100%;
+    height: 47%;
+    position: absolute;
+    top: 52%;
+    left: 0;
+    overflow: hidden;
+}
+
+.category2>figure>img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    object-fit: cover; 
+}
+
+.category2>figure:hover img{
+    width: 110%;
+    left: -10%;
+}
+
+.category2>figure{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.category h4{
+    position: absolute;
+    z-index: 1;
+    font-family: Cormorant;
+    font-size: 30px;
+}
+
+.category1 h4{
+    top: 22%;
+    left: 73%;
+}
+
+.category2 h4:nth-of-type(1){
+    top: 60%;
+    left: 8%;
+}
+
+.category2 h4:nth-of-type(2){
+    top: 9%;
+    left: 8%;
+}
+
+
+
+/* end category */
+
+/* start product */
+
+.product>section:nth-of-type(1){
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.product>section:nth-of-type(1)>span{
+    font-size: 20px;
+}
+
+.product>section:nth-of-type(1)>h2{
+    font-size: 30px;
+}
+
+.product>section:nth-of-type(1)>h3{
+    font-size: 22px;
+}
+
+.product>section:nth-of-type(1)>*{
+    text-align: center;
+}
+
+.product>section>section{
+    width: 335px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.product>section>section>*{
+    text-align: center;
+}
+
+.product>section>section>h3>a{
+    text-decoration: none;
+    color: black;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image>figure{
+    width: 295px;
+    height: 299px;
+}
+
+.image>figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+.option{
+    background-color: white;
+    width: 295px;
+    height: 299px;
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    left: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+    
+}
+
+.image:hover .option{
+    visibility: visible;
+    opacity: 1;
+}
+
+.button{
+    width: 28px;
+    height: 26px;
+    border: 1px solid black;
+    padding: 2px 2px;
+    margin: 15px;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.button>i{
+    text-align: center;
+    padding: 0 !important;
+}
+
+/* end product */
+
+/* end main */
+
+/* start footer */
+
+footer{
+    margin-top: 75px;
+}
+
+.footer_top{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(223, 223, 223);
+    padding: 20px 90px;
+}
+
+.footer_top h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.footer_top p{
+    font-size: 18px;
+    line-height: 31px;
+    color: rgb(173, 173, 173);
+}
+
+.footer_top .brand>h4{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 10px;
+    align-items: center;
+}
+
+.social i{
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgb(145, 145, 145);
+    color: rgb(223, 223, 223);
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+.footer_bottom{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(163, 163, 163);
+    background-color: black;
+}
+
+.footer_bottom>nav{
+    height: 100%;
+}
+
+.footer_bottom ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_bottom li{
+    margin: 0 20px;
+}
+
+.footer_bottom a{
+    color: white;
+    text-decoration: none;
+}

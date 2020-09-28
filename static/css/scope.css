@@ -1,0 +1,103 @@
+@media only screen and (max-width: 991px) {
+    .menu_small {
+        visibility: visible;
+    }
+
+    .menu_nav {
+        width: 100%;
+        height: 85px;
+    }
+
+    .menu_small:hover~.menu {
+        transform: translateX(320px);
+    }
+
+    .menu_small:hover .bars_small {
+        visibility: hidden;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 85px;
+        margin-left: 0;
+    }
+
+    .services,
+    .portfolio,
+    .ed_ex,
+    .skills,
+    .contact {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio_wrapper {
+        justify-content: flex-start;
+        padding: 0 1% 0 6%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .myname {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .social_media {
+        justify-content: space-evenly;
+    }
+
+    .portfolio_wrapper {
+        justify-content: center;
+    }
+
+    .skill_grid {
+        flex-direction: column-reverse;
+    }
+
+    .percent {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 497px) {
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ed_ex_container {
+        padding: 50px 25px;
+    }
+
+    .timeline_circle {
+        left: -123px;
+    }
+
+    .timeline_event::before {
+        left: -105px;
+    }
+
+    .timeline_event>p {
+        margin-left: -38px;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .content,
+    .services,
+    .portfolio,
+    .ed_ex,
+    .skills,
+    .contact {
+        width: 110% !important;
+    }
+}
