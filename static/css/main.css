@@ -156,9 +156,12 @@ a:hover {
     width: calc(100% - 115px);
     margin-left: 100px;
     margin-right: 0;
-    background-color: lightblue;
     display: flex;
 }
+/* 
+.first {
+    margin: 0;
+} */
 
 .salutation {
     background-color: #CAD2C5;
