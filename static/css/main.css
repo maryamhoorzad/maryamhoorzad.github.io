@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face {
+/* @font-face {
     font-family: poppins;
     src: url(../fonts/Poppins-Bold.ttf);
     src: url(../fonts/Poppins-ExtraBold.ttf);
@@ -12,11 +12,11 @@ html {
     src: url(../fonts/Poppins-Regular.ttf);
     src: url(../fonts/Poppins-SemiBold.ttf);
     src: url(../fonts/Poppins-Thin.ttf);
-}
+} */
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
 }
 
 h2 {
@@ -182,6 +182,7 @@ a:hover {
     color: #F37B83;
     font-size: 80px;
     margin-bottom: 40px;
+    font-weight: bolder;
 }
 
 .profile {
