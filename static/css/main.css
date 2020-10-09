@@ -67,7 +67,7 @@ a:hover {
     left: 26px;
     top: 25px;
     z-index: 55;
-    color: aqua;
+    /* color: aqua; */
 }
 
 #menuclose {
@@ -80,7 +80,7 @@ a:hover {
 .menu_nav {
     width: 85px;
     height: 110vh;
-    background-color: #84a98c;
+    background-color: #1f385c;
     position: fixed;
     top: 0;
     left: 0;
@@ -164,7 +164,7 @@ a:hover {
 } */
 
 .salutation {
-    background-color: #CAD2C5;
+    background-color: #e0e9f5;
 }
 
 .my {
@@ -176,7 +176,7 @@ a:hover {
 
 
 #hello {
-    color: #56705c;
+    color: #23436c;
     font-size: 28px;
     margin-bottom: 40px;
 }
@@ -191,7 +191,7 @@ a:hover {
 .profile {
     text-align: justify;
     margin-bottom: 40px;
-    color: #7d9983;
+    color:#667e9e;
 }
 
 .social_media {
@@ -201,7 +201,7 @@ a:hover {
 }
 
 .social_media a {
-    color: #56705c;
+    color:#667e9e;
 
 }
 
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .service_detail {
-    background-color: #739179;
+    background-color: #14253d;
 }
 
 .service_detail>h2 {
@@ -248,7 +248,7 @@ a:hover {
 
 .service_detail>p {
     font-size: 18px;
-    color: #cad2c5;
+    color:#9eb3ce;
     margin-bottom: 40px;
 }
 
@@ -294,7 +294,7 @@ a:hover {
 
 .portfolio_wrapper {
     display: flex;
-    background-color: #739179;
+    background-color: #14253d;
     justify-content: center;
     padding: 0 1%;
 }
@@ -305,7 +305,7 @@ a:hover {
 
 .portfolio h2 {
     font-size: 30px;
-    background-color: #739179;
+    background-color: #14253d;
     color: #F37B83;
     margin-bottom: 40px;
     text-transform: uppercase;
@@ -380,7 +380,7 @@ a:hover {
 }
 
 .ed_ex_wrapper {
-    background-color: #739179;
+    background-color: #14253d;
     padding: 0 1%;
 }
 
@@ -406,7 +406,7 @@ a:hover {
 }
 
 .timeline_event>p {
-    color: #cad2c5;
+    color:#9eb3ce;
     font-size: 18px;
 }
 
@@ -481,7 +481,7 @@ a:hover {
 }
 
 .skills_wrapper {
-    background-color: #739179;
+    background-color: #14253d;
     justify-content: center;
     padding: 0 1%;
 }
@@ -512,14 +512,14 @@ a:hover {
 .skill_detail>span {
     font-size: 22px;
     line-height: 35px;
-    color: #a7beac;
+    color:#9eb3ce;
     text-transform: uppercase;
 }
 
 .skill {
     width: 100%;
     height: 12px;
-    background-color: #a7beac;
+    background-color:#c2d0e2;
     margin-bottom: 15px;
 }
 
@@ -563,7 +563,7 @@ a:hover {
     font-size: 45px;
     font-weight: 700;
     width: 100px;
-    color: #a7beac;
+    color:#bccce0;
     margin-top: -36px;
     margin-right: 60px;
 }
@@ -577,7 +577,7 @@ a:hover {
 }
 
 .contact_wrapper {
-    background-color: #739179;
+    background-color: #14253d;
     justify-content: center;
     padding: 0 1%;
 }
@@ -600,12 +600,12 @@ a:hover {
 }
 
 .contact_detail span {
-    color: #cad2c5;
+    color:#9eb3ce;
     font-size: 18px;
 }
 
 .contact_detail i {
-    color: #cad2c5;
+    color:#9eb3ce;
     font-size: 22px;
     margin: 0 7px;
     width: 28px;
@@ -618,4 +618,5 @@ a:hover {
 
 .contact_detail:hover i {
     color: #F37B83;
+    margin: 0 10px;
 }
