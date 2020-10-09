@@ -610,6 +610,7 @@ a:hover {
     margin: 0 7px;
     width: 28px;
     height: 23px;
+    transition: .6s;
 }
 
 .contact_detail:hover a {
